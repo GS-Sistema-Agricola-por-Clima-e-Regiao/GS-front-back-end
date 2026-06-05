@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>Sistema Agrícola por Clima e Região</title>
+</head>
+<body>
+  <section id="hero" class="hero box">
+    <header class="header-hero">
+      <h1>Sistema Agrícola por Clima e Região</h1>
+      <nav class="menu-hero">
+        <ul class="menu-hero-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#problemas">Problema</a></li>
+          <li><a href="#tecnologia">Tecnologia</a></li>
+          <li><a href="#objetivos">Objetivos</a></li>
+          <li><a href="#publico-alvo">Público-Alvo</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#aplicacoes">Aplicação no dia a dia</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="conteudo-hero">
+      <p>O projeto foi desenvolvido com o 
+objetivo de auxiliar agricultores na escolha das melhores culturas para 
+cada região</p>
+    </div>
+  </section>
+  <main>
+    <section class="problema box" id="problemas">
+      <div class="problema-texto">
+        <h2>Problema</h2>
+        <p>Agricultores enfrentam perdas financeiras, baixa produtividade e desperdício agrícola por desconhecerem cultivos adequados ao clima e solo regionais.</p>
+      </div>
+    </section>
+    <section class="tecnologia box" id="tecnologia">
+      <div class="tecnologia-texto">
+        <h2>Tecnologia</h2>
+        <p>Nosso projeto utiliza satélites para determinar a área em que o usuário está e verifica o melhor tipo de plantio para o clima da região.</p>
+        <p>Nosso projeto também verifica a temperatura do local para alertar se a temperatura está muito alta para o tipo de plantio.</p>
+      </div>
+    </section>
+    <section class="objetivos box" id="objetivos">
+      <div class="objetivos-texto">
+        <h2>Objetivos</h2>
+        <p>Nosso objetivo é ajudar os agricultores a ter uma melhor produtividade sem ter tantos gastos.</p>
+      </div>
+    </section>
+    <section class="publico box" id="publico-alvo">
+      <div class="publico-texto">
+        <h2>Público-Alvo</h2>
+        <p>Nosso público-alvo são agricultores que buscam inovação, tecnologia e soluções sustentáveis para aumentar produtividade, eficiência e desenvolvimento no campo.</p>
+      </div>
+    </section>
+    <section class="beneficios box" id="beneficios">
+      <h2>Benefícios</h2>
+      <div class="beneficios-itens">
+        <div class="beneficios-item">
+          <img src=".//images/produtividade.png" alt="Ícone representando aumento de produtividade agrícola">
+          <p>Maior produtividade</p>
+          <button onclick="mostrarDetalhe('produtividade')">
+          Mais detalhes
+          </button>
+          <div class="resultado" id="produtividade">
+          </div>
+        </div>
+        <div class="beneficios-item">
+          <img src=".//images/diminuiçãoDeGastos.png" alt="Ícone representando redução de gastos no campo">
+          <p>Diminuição de gastos</p>
+          <button onclick="mostrarDetalhe('diminuicao')">
+            Mais detalhes
+          </button>
+          <div class="resultado" id="diminuicao">
+          </div>
+        </div>
+        <div class="beneficios-item">
+          <img src=".//images/agronegocio.png" alt="Ícone representando fortalecimento do agronegócio">
+          <p>Fortalecimento do agronegócio</p>
+          <button onclick="mostrarDetalhe('fortalecimento')">
+            Mais detalhes
+          </button>
+          <div class="resultado" id="fortalecimento">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="aplicacoes box" id="aplicacoes">
+      <div class="aplicacoes-all">
+        <h2>Aplicação no dia a dia</h2>
+        <ul class="aplicacoes-list">
+          <li>✓ Monitoramento da temperatura</li>
+          <li>✓ Monitoramento da umidade</li>
+          <li>✓ Monitoramento do clima</li>
+        </ul>
+        <div class="aplicacoes-images">
+          <img src="./images/temperatura.png" alt="Ícone de termômetro para monitoramento da temperatura">
+          <img src="./images/umidade.png" alt="Ícone de gota para monitoramento da umidade">
+          <img src="./images/clima.png" alt="Ícone de clima para monitoramento climático">
+        </div>
+      </div>
+      <footer class="footer-aplicacoes">
+        <p>Sistema Agrícola por Clima e Região</p>
+        <p>Projeto desenvolvido para auxiliar agricultores na escolha do melhor cultivo.</p>
+      </footer>
+    </section>
+  </main>
+  <script src="./JS/script.js"></script>
+</body>
+</html>

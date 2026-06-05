@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&family=Quicksand:wght@300..700&family=Share+Tech&display=swap");
+
+:root {
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #73a942;
+}
+
+li {
+  transition: 0.5s;
+}
+
+li:hover {
+  scale: 1.1;
+}
+
+.box {
+  height: 100dvh;
+}
+
+.hero {
+  color: #ffffff;
+  background-image:
+    linear-gradient(
+    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/agricultura.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header-hero {
+  font-size: var(--spacing-md);
+  padding: 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: transparent;
+  height: 100px;
+  width: 100%;
+}
+
+.menu-hero-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.conteudo-hero {
+  height: calc(100dvh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-wrap: balance;
+  font-size: 40px;
+}
+
+.problema {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  background-image:
+    linear-gradient(
+    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/problemas.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: var(--spacing-md);
+}
+
+.problema-texto {
+  height: calc(100dvh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: balance;
+  font-size: var(--spacing-lg);
+  animation: viewAnimation both;
+  animation-timeline: view(70% 20%);
+}
+
+.tecnologia {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  background-image:
+    linear-gradient(
+    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/satelite.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: var(--spacing-md);
+}
+
+.tecnologia-texto {
+  height: calc(100dvh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: balance;
+  font-size: var(--spacing-lg);
+  animation: viewAnimation both;
+  animation-timeline: view(70% 20%);
+}
+
+.objetivos {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  background-image:
+    linear-gradient(
+    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/agricultores.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: var(--spacing-md);
+}
+
+.objetivos-texto {
+  height: calc(100dvh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: balance;
+  font-size: var(--spacing-lg);
+  animation: viewAnimation both;
+  animation-timeline: view(70% 20%);
+}
+
+.publico {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  background-image:
+    linear-gradient(
+    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/publico.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: var(--spacing-md);
+}
+
+.publico-texto {
+  height: calc(100dvh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: balance;
+  font-size: var(--spacing-lg);
+  animation: viewAnimation both;
+  animation-timeline: view(70% 20%);
+}
+
+.beneficios {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  background-color: #245501;
+  font-size: var(--spacing-md);
+}
+
+.beneficios-itens {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: calc(100dvh - 100px);
+}
+
+.beneficios-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--spacing-sm);
+  width: 20%;
+  height: 60%;
+  border: 1px solid ;
+  box-shadow: inset 1px 1px 10px #ffffff;
+  animation: viewAnimation both;
+  animation-timeline: view(70% 20%);
+  text-wrap: balance;
+}
+
+.beneficios-item:hover {
+  scale: 1.1;
+}
+
+.beneficios-item img {
+  height: 60%;
+  width: 90%;
+}
+
+.beneficios-item button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  color: #425335;
+  background-color: aquamarine;
+  transition: 0.3s;
+}
+
+.beneficios-item button:hover{
+  background: #ffffff;
+
+}
+
+.resultado{
+  margin-top:15px;
+  background-color: #73a942;
+  padding:15px;
+  border-radius:10px;
+  border: 1px solid ;
+  box-shadow: inset 1px 1px 10px #ffffff;
+}
+
+.aba {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #425335;
+  color: white;
+  border-radius: 8px;
+  animation: aparecer 0.3s ease;
+}
+
+.aplicacoes {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  background-color: #245501;
+  font-size: var(--spacing-md);
+}
+
+.aplicacoes-all {
+  height: calc(100dvh - 100px);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  font-size: var(--spacing-lg);
+  animation: viewAnimation both;
+  animation-timeline: view(70% 20%);
+}
+
+.aplicacoes-list {
+  height: calc(100dvh - 100px);
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.aplicacoes-images {
+  width: 45%;
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aplicacoes img {
+  height: 200px;
+}
+
+@keyframes viewAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
