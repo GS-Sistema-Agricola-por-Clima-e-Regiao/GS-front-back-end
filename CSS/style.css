@@ -1,9 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&family=Quicksand:wght@300..700&family=Share+Tech&display=swap");
-
 :root {
   --spacing-sm: 10px;
   --spacing-md: 20px;
   --spacing-lg: 40px;
+  --color-green-dark: #245501;
+  --color-green-light: #73a942;
+  --color-accent: #f4c95d;
+  --color-white: #ffffff;
+  --color-overlay-strong: rgba(0, 0, 0, 0.8);
+  --color-overlay-soft: rgba(0, 0, 0, 0.45);
+  --color-header: rgba(0, 0, 0, 0.78);
 }
 
 * {
@@ -13,8 +18,24 @@
 }
 
 html {
-  font-family: "Quicksand", sans-serif;
+  font-family: Arial, sans-serif;
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-green-dark);
+  color: var(--color-white);
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--color-accent);
+  font-size: clamp(28px, 4vw, 42px);
 }
 
 ul,
@@ -24,30 +45,31 @@ ol {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-white);
+  transition: color 0.3s;
 }
 
 a:hover {
-  color: #73a942;
+  color: var(--color-green-light);
 }
 
 li {
-  transition: 0.5s;
+  transition: transform 0.3s;
 }
 
 li:hover {
-  scale: 1.1;
+  transform: translateY(-2px);
 }
 
 .box {
-  height: 100dvh;
+  min-height: 100vh;
 }
 
 .hero {
-  color: #ffffff;
+  color: var(--color-white);
   background-image:
     linear-gradient(
-    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    to top, var(--color-overlay-strong), var(--color-overlay-soft)),
     url(../images/agricultura.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,46 +78,58 @@ li:hover {
 }
 
 .header-hero {
-  font-size: var(--spacing-md);
-  padding: 20px;
-  height: 100px;
+  font-size: 16px;
+  padding: 16px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--spacing-md);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: transparent;
-  height: 100px;
+  background-color: var(--color-header);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   width: 100%;
+}
+
+.header-hero h1 {
+  font-size: var(--spacing-md);
+  line-height: 1.3;
 }
 
 .menu-hero-list {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+}
+
+.menu-hero-list a {
+  display: inline-block;
+  padding: 4px 0;
 }
 
 .conteudo-hero {
-  height: calc(100dvh - 100px);
+  min-height: 100vh;
+  padding: 140px 24px 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   text-wrap: balance;
-  font-size: 40px;
+  font-size: clamp(28px, 5vw, 40px);
 }
 
 .problema {
-  color: #ffffff;
+  color: var(--color-white);
   text-align: center;
-  padding: 20px;
+  padding: 120px 24px 40px;
   background-image:
     linear-gradient(
-    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    to top, var(--color-overlay-strong), var(--color-overlay-soft)),
     url(../images/problemas.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,23 +139,27 @@ li:hover {
 }
 
 .problema-texto {
-  height: calc(100dvh - 100px);
+  min-height: calc(100vh - 160px);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: var(--spacing-md);
   text-wrap: balance;
-  font-size: var(--spacing-lg);
+  font-size: clamp(28px, 4vw, 40px);
+  max-width: 900px;
+  margin: 0 auto;
   animation: viewAnimation both;
   animation-timeline: view(70% 20%);
 }
 
 .tecnologia {
-  color: #ffffff;
+  color: var(--color-white);
   text-align: center;
-  padding: 20px;
+  padding: 120px 24px 40px;
   background-image:
     linear-gradient(
-    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    to top, var(--color-overlay-strong), var(--color-overlay-soft)),
     url(../images/satelite.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -131,23 +169,27 @@ li:hover {
 }
 
 .tecnologia-texto {
-  height: calc(100dvh - 100px);
+  min-height: calc(100vh - 160px);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: var(--spacing-md);
   text-wrap: balance;
-  font-size: var(--spacing-lg);
+  font-size: clamp(28px, 4vw, 40px);
+  max-width: 900px;
+  margin: 0 auto;
   animation: viewAnimation both;
   animation-timeline: view(70% 20%);
 }
 
 .objetivos {
-  color: #ffffff;
+  color: var(--color-white);
   text-align: center;
-  padding: 20px;
+  padding: 120px 24px 40px;
   background-image:
     linear-gradient(
-    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    to top, var(--color-overlay-strong), var(--color-overlay-soft)),
     url(../images/agricultores.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -157,23 +199,27 @@ li:hover {
 }
 
 .objetivos-texto {
-  height: calc(100dvh - 100px);
+  min-height: calc(100vh - 160px);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: var(--spacing-md);
   text-wrap: balance;
-  font-size: var(--spacing-lg);
+  font-size: clamp(28px, 4vw, 40px);
+  max-width: 900px;
+  margin: 0 auto;
   animation: viewAnimation both;
   animation-timeline: view(70% 20%);
 }
 
 .publico {
-  color: #ffffff;
+  color: var(--color-white);
   text-align: center;
-  padding: 20px;
+  padding: 120px 24px 40px;
   background-image:
     linear-gradient(
-    to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    to top, var(--color-overlay-strong), var(--color-overlay-soft)),
     url(../images/publico.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -183,29 +229,39 @@ li:hover {
 }
 
 .publico-texto {
-  height: calc(100dvh - 100px);
+  min-height: calc(100vh - 160px);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: var(--spacing-md);
   text-wrap: balance;
-  font-size: var(--spacing-lg);
+  font-size: clamp(28px, 4vw, 40px);
+  max-width: 900px;
+  margin: 0 auto;
   animation: viewAnimation both;
   animation-timeline: view(70% 20%);
 }
 
 .beneficios {
-  color: #ffffff;
+  color: var(--color-white);
   text-align: center;
-  padding: 20px;
-  background-color: #245501;
+  padding: 40px 24px;
+  background-color: var(--color-green-dark);
   font-size: var(--spacing-md);
+}
+
+.beneficios h2 {
+  padding-top: 100px;
 }
 
 .beneficios-itens {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: calc(100dvh - 100px);
+  justify-content: center;
+  gap: var(--spacing-lg);
+  min-height: calc(100vh - 180px);
+  flex-wrap: wrap;
 }
 
 .beneficios-item {
@@ -214,90 +270,68 @@ li:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: var(--spacing-sm);
-  width: 20%;
-  height: 60%;
-  border: 1px solid ;
-  box-shadow: inset 1px 1px 10px #ffffff;
+  gap: var(--spacing-md);
+  width: min(100%, 280px);
+  min-height: 360px;
+  padding: 24px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
   animation: viewAnimation both;
   animation-timeline: view(70% 20%);
   text-wrap: balance;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .beneficios-item:hover {
-  scale: 1.1;
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
 }
 
 .beneficios-item img {
-  height: 60%;
-  width: 90%;
-}
-
-.beneficios-item button {
-  display: block;
-  margin-bottom: 10px;
-  padding: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  color: #425335;
-  background-color: aquamarine;
-  transition: 0.3s;
-}
-
-.beneficios-item button:hover{
-  background: #ffffff;
-
-}
-
-.resultado{
-  margin-top:15px;
-  background-color: #73a942;
-  padding:15px;
-  border-radius:10px;
-  border: 1px solid ;
-  box-shadow: inset 1px 1px 10px #ffffff;
-}
-
-.aba {
-  margin-top: 10px;
-  padding: 10px;
-  background-color: #425335;
-  color: white;
-  border-radius: 8px;
-  animation: aparecer 0.3s ease;
+  max-width: 100%;
+  width: 180px;
+  height: auto;
 }
 
 .aplicacoes {
-  color: #ffffff;
+  color: var(--color-white);
   text-align: center;
-  padding: 20px;
-  background-color: #245501;
+  padding: 120px 24px 40px;
+  background-color: var(--color-green-dark);
   font-size: var(--spacing-md);
 }
 
 .aplicacoes-all {
-  height: calc(100dvh - 100px);
+  min-height: calc(100vh - 160px);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: var(--spacing-lg);
   font-size: var(--spacing-lg);
   animation: viewAnimation both;
   animation-timeline: view(70% 20%);
 }
 
+.aplicacoes-all h2 {
+  width: 100%;
+}
+
 .aplicacoes-list {
-  height: calc(100dvh - 100px);
-  width: 45%;
+  width: min(100%, 480px);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  gap: var(--spacing-md);
+  text-align: left;
+  line-height: 1.4;
 }
 
 .aplicacoes-images {
-  width: 45%;
+  width: min(100%, 480px);
   display: flex;
   gap: var(--spacing-sm);
   flex-direction: column;
@@ -306,7 +340,25 @@ li:hover {
 }
 
 .aplicacoes img {
-  height: 200px;
+  width: 170px;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-aplicacoes {
+  width: 100%;
+  padding: 24px 16px 0;
+  margin-top: var(--spacing-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-white);
+}
+
+.footer-aplicacoes p + p {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.85;
 }
 
 @keyframes viewAnimation {
