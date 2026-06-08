@@ -35,3 +35,33 @@ function validarQuiz() {
 
     alert(`Você acertou ${pontos} de ${Object.keys(respostas).length} questões.`);
 }
+
+function white(){
+    document.body.style.backgroundColor = "white"
+    document.getElementById("quiz").style.color ="black"
+    document.getElementById("hcor").style.color ="black"
+    document.getElementById("whi").style.color ="black"
+    document.getElementById("blc").style.color ="black"
+    document.getElementById("ble").style.color ="black"
+    document.getElementById("env").style.color ="black"
+}
+
+function black(){
+    document.body.style.backgroundColor = "black"
+    document.getElementById("quiz").style.color ="white"
+    document.getElementById("hcor").style.color ="white"
+    document.getElementById("whi").style.color ="white"
+    document.getElementById("blc").style.color ="white"
+    document.getElementById("ble").style.color ="white"
+    document.getElementById("env").style.color ="white"
+}
+
+function blue(){
+    document.body.style.backgroundColor = "blue"
+    document.getElementById("quiz").style.color ="white"
+    document.getElementById("hcor").style.color ="white"
+    document.getElementById("whi").style.color ="white"
+    document.getElementById("blc").style.color ="white"
+    document.getElementById("ble").style.color ="white"
+    document.getElementById("env").style.color ="white"
+}

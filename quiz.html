@@ -7,7 +7,10 @@
   <title>Quiz</title>
 </head>
 <body>
-  <h1>Quiz</h1>
+  <h1 id="hcor">Quiz</h1>
+  <button onclick="white()" id="whi">White</button>
+  <button onclick="black()" id="blc">Black</button>
+  <button onclick="blue()" id="ble">Blue</button>
   <form class="quiz" id="quiz">
     <div class="perguntas">
       <label for="1"> 1) O clima afeta o tipo de plantio ?</label><br>
@@ -67,7 +70,7 @@
     </div>
   </form>
 
-  <button type="submit" onclick="validarQuiz()">Enviar</button>
+  <button type="submit" onclick="validarQuiz()" id="env">Enviar</button>
   <script src="./JS/quiz.js"></script>
 </body>
 </html>
