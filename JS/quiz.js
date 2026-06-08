@@ -62,6 +62,6 @@ function blue(){
     document.getElementById("hcor").style.color ="white"
     document.getElementById("whi").style.color ="white"
     document.getElementById("blc").style.color ="white"
-    document.getElementById("ble").style.color ="white"
+    document.getElementById("blue").style.color ="white"
     document.getElementById("env").style.color ="white"
 }
