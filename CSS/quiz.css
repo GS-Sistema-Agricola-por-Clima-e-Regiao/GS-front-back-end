@@ -1,4 +1,4 @@
-:root{
+:root {
   --color-green-dark: #245501;
   --color-white: #ffffff;
   --color-yellow: #f4c95d;
@@ -63,6 +63,21 @@ label {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  border:  solid 1px;
+  border: solid 1px;
   padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgb(80, 80, 80);
+}
+
+.borda-preta {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border: solid 1px;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgb(0, 0, 0);
 }
