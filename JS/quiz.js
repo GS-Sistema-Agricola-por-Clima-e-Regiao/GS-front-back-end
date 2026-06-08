@@ -42,7 +42,7 @@ function white(){
     document.getElementById("hcor").style.color ="black"
     document.getElementById("whi").style.color ="black"
     document.getElementById("blc").style.color ="black"
-    document.getElementById("ble").style.color ="black"
+    document.getElementById("blue").style.color ="black"
     document.getElementById("env").style.color ="black"
 }
 
@@ -52,7 +52,7 @@ function black(){
     document.getElementById("hcor").style.color ="white"
     document.getElementById("whi").style.color ="white"
     document.getElementById("blc").style.color ="white"
-    document.getElementById("ble").style.color ="white"
+    document.getElementById("blue").style.color ="white"
     document.getElementById("env").style.color ="white"
 }
 
