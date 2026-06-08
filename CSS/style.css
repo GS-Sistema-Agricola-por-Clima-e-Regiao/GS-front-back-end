@@ -6,6 +6,8 @@
   --color-green-light: #73a942;
   --color-yellow: #f4c95d;
   --color-white: #ffffff;
+  --color-overlay-strong: rgba(0, 0, 0, 0.8);
+  --color-overlay-soft: rgba(0, 0, 0, 0.45);
   --color-header: rgba(0, 0, 0, 0.78);
 }
 
