@@ -3,47 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./CSS/quiz.css">
+  <title>Quiz</title>
 </head>
 <body>
   <h1>Quiz</h1>
-  <form id="quiz">
-    <label for="p1"> O clima afeta o tipo de plantio ?</label><br>
-    <input type="radio" name="p1" value="sim"/> Sim<br>
-    <input type="radio" name="p1" value="nao"/> Não<br>
-    <label for="p2">Temperatura é indiferente para plantações ?</label><br>
-    <input type="radio" name="p2" value="sim"/> Sim<br>
-    <input type="radio" name="p2" value="nao"/> Não<br>
-    <label for="p3">Umidade é importante para plantações ?</label><br>
-    <input type="radio" name="p3" value="sim"/> Sim<br>
-    <input type="radio" name="p3" value="nao"/> Não<br>
-    <label for="p4">Monitoramento é importante ?</label><br>
-    <input type="radio" name="p4" value="sim"/> Sim<br>
-    <input type="radio" name="p4" value="nao"/> Não<br>
-    <label for="p5">Dados orbitais podem ajudar ?</label><br>
-    <input type="radio" name="p5" value="sim"/> Sim<br>
-    <input type="radio" name="p5" value="nao"/> Não<br>
-    <label for="p6">O clima é igual em todas as regiões do Brasil ?</label><br>
-    <input type="radio" name="p6" value="sim"/> Sim<br>
-    <input type="radio" name="p6" value="nao"/> Não<br>
-    <label for="p7">A tecnologia é inutil na agricultura moderna ?</label><br>
-    <input type="radio" name="p7" value="sim"/> Sim<br>
-    <input type="radio" name="p7" value="nao"/> Não<br>
-    <label for="p8">Qual tipo de plantio é melhor para climas quentes ?</label><br>
-    <input type="radio" name="p8" value="errado"/> Raízes e Tubérculos<br>
-    <input type="radio" name="p8" value="errado"/> Crucíferas<br>
-    <input type="radio" name="p8" value="certo"/> Hortaliças<br>
-    <input type="radio" name="p8" value="errado"/> Grãos<br>
-    <label for="p9">Qual a tempertura ideal para a soja  ?</label><br>
-    <input type="radio" name="p9" value="errado"/> 10°C a 20°C<br>
-    <input type="radio" name="p9" value="certo"/> 20°C a 30°C<br>
-    <input type="radio" name="p9" value="errado"/> 30°C a 40°C<br>
-    <input type="radio" name="p9" value="errado"/> 40°C a 50°C<br>
-    <label for="p10">Qual a temperatura ideal para plantções de café ?</label><br>
-    <input type="radio" name="p10" value="errado"/> 44°C a 56°C<br>
-    <input type="radio" name="p10" value="errado"/> 32°C a 43°C<br>
-    <input type="radio" name="p10" value="errado"/> 22°C a 31°C<br>
-    <input type="radio" name="p10" value="certo"/> 18°C a 21°C<br>
+  <form class="quiz" id="quiz">
+    <div class="perguntas">
+      <label for="1">1) O clima afeta o tipo de plantio ?</label><br>
+      <input type="radio" name="1" value="sim"/> Sim<br>
+      <input type="radio" name="1" value="nao"/> Não<br>
+    </div>
+    <div class="perguntas">
+      <label for="2">2) Temperatura é indiferente para plantações ?</label><br>
+      <input type="radio" name="2" value="sim"/> Sim<br>
+      <input type="radio" name="2" value="nao"/> Não<br>
+    </div>
+    <div class="perguntas">
+      <label for="3">3) Umidade é importante para plantações ?</label><br>
+      <input type="radio" name="3" value="sim"/> Sim<br>
+      <input type="radio" name="3" value="nao"/> Não<br>
+    </div>
+    <div class="perguntas">
+      <label for="4">4) Monitoramento é importante ?</label><br>
+      <input type="radio" name="4" value="sim"/> Sim<br>
+      <input type="radio" name="4" value="nao"/> Não<br>
+    </div>
+    <div class="perguntas">
+      <label for="5">5) Dados orbitais podem ajudar ?</label><br>
+      <input type="radio" name="5" value="sim"/> Sim<br>
+      <input type="radio" name="5" value="nao"/> Não<br>
+    </div>
+    <div class="perguntas">
+      <label for="6">6) O clima é igual em todas as regiões do Brasil ?</label><br>
+      <input type="radio" name="6" value="sim"/> Sim<br>
+      <input type="radio" name="6" value="nao"/> Não<br>
+    </div>
+    <div class="perguntas">
+      <label for="7">7) A tecnologia é inutil na agricultura moderna ?</label><br>
+      <input type="radio" name="7" value="sim"/> Sim<br>
+      <input type="radio" name="7" value="nao"/> Não<br>
+    </div>
+    <div class="perguntas">
+      <label for="8">8) Qual tipo de plantio é melhor para climas quentes ?</label><br>
+      <input type="radio" name="8" value="errado"/> Raízes e Tubérculos<br>
+      <input type="radio" name="8" value="errado"/> Crucíferas<br>
+      <input type="radio" name="8" value="certo"/> Hortaliças<br>
+      <input type="radio" name="8" value="errado"/> Grãos<br>
+    </div>
+    <div class="perguntas">
+      <label for="9">9) Qual a tempertura ideal para a soja  ?</label><br>
+      <input type="radio" name="9" value="errado"/> 10°C a 20°C<br>
+      <input type="radio" name="9" value="certo"/> 20°C a 30°C<br>
+      <input type="radio" name="9" value="errado"/> 30°C a 40°C<br>
+      <input type="radio" name="9" value="errado"/> 40°C a 50°C<br>
+    </div>
+    <div class="perguntas">
+      <label for="10">10) Qual a temperatura ideal para plantções de café ?</label><br>
+      <input type="radio" name="10" value="errado"/> 44°C a 56°C<br>
+      <input type="radio" name="10" value="errado"/> 32°C a 43°C<br>
+      <input type="radio" name="10" value="errado"/> 22°C a 31°C<br>
+      <input type="radio" name="10" value="certo"/> 18°C a 21°C<br>
+    </div>
   </form>
 
   <button type="submit" onclick="validarQuiz()">Enviar</button>

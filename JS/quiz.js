@@ -2,16 +2,16 @@ function validarQuiz() {
 
     // Respostas corretas
     const respostas = {
-        p1: "sim",
-        p2: "nao",
-        p3: "sim",
-        p4: "sim",
-        p5: "sim",
-        p6: "nao",
-        p7: "nao",
-        p8: "certo",      // Hortaliças
-        p9: "certo",
-        p10: "certo"
+        1: "sim",
+        2: "nao",
+        3: "sim",
+        4: "sim",
+        5: "sim",
+        6: "nao",
+        7: "nao",
+        8: "certo",      // Hortaliças
+        9: "certo",
+        10: "certo"
     };
 
     let pontos = 0;
