@@ -34,7 +34,7 @@ h2 {
 }
 
 h2 {
-  color: var(--color-accent);
+  color: var(--color-yellow);
   font-size: clamp(28px, 4vw, 42px);
 }
 
@@ -127,15 +127,8 @@ li:hover {
   color: var(--color-white);
   text-align: center;
   padding: 120px 24px 40px;
-  background-image:
-    linear-gradient(
-    to top, var(--color-overlay-strong), var(--color-overlay-soft)),
-    url(../images/problemas.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-size: var(--spacing-md);
+  background-color: var(--color-green-dark);
+  display: flex;
 }
 
 .problema-texto {
@@ -157,15 +150,8 @@ li:hover {
   color: var(--color-white);
   text-align: center;
   padding: 120px 24px 40px;
-  background-image:
-    linear-gradient(
-    to top, var(--color-overlay-strong), var(--color-overlay-soft)),
-    url(../images/satelite.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-size: var(--spacing-md);
+  background-color: var(--color-green-dark);
+  display: flex;
 }
 
 .tecnologia-texto {
@@ -187,15 +173,8 @@ li:hover {
   color: var(--color-white);
   text-align: center;
   padding: 120px 24px 40px;
-  background-image:
-    linear-gradient(
-    to top, var(--color-overlay-strong), var(--color-overlay-soft)),
-    url(../images/agricultores.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-size: var(--spacing-md);
+  background-color: var(--color-green-dark);
+  display: flex;
 }
 
 .objetivos-texto {
@@ -217,15 +196,8 @@ li:hover {
   color: var(--color-white);
   text-align: center;
   padding: 120px 24px 40px;
-  background-image:
-    linear-gradient(
-    to top, var(--color-overlay-strong), var(--color-overlay-soft)),
-    url(../images/publico.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-size: var(--spacing-md);
+  background-color: var(--color-green-dark);
+  display: flex;
 }
 
 .publico-texto {
@@ -243,12 +215,25 @@ li:hover {
   animation-timeline: view(70% 20%);
 }
 
+.images {
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  aspect-ratio: 16/9;
+  object-fit: fill;
+}
+
 .beneficios {
   color: var(--color-white);
   text-align: center;
   padding: 40px 24px;
   background-color: var(--color-green-dark);
   font-size: var(--spacing-md);
+}
+
+.seta {
+  background-color: transparent;
+  padding: 10px;
 }
 
 .beneficios h2 {
@@ -261,7 +246,6 @@ li:hover {
   justify-content: center;
   gap: var(--spacing-lg);
   min-height: calc(100vh - 180px);
-  flex-wrap: wrap;
 }
 
 .beneficios-item {
@@ -271,7 +255,7 @@ li:hover {
   justify-content: center;
   text-align: center;
   gap: var(--spacing-md);
-  width: min(100%, 280px);
+  width: min(100%, 480px);
   min-height: 360px;
   padding: 24px;
   background-color: rgba(255, 255, 255, 0.08);
@@ -284,6 +268,18 @@ li:hover {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.beneficios-list {
+  width: min(100%, 480px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--spacing-md);
+  text-align: left;
+  line-height: 1.4;
+  font-size: var(--spacing-lg);
+}
+
 .beneficios-item:hover {
   transform: translateY(-8px);
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
@@ -291,7 +287,7 @@ li:hover {
 
 .beneficios-item img {
   max-width: 100%;
-  width: 180px;
+  width: 280px;
   height: auto;
 }
 
