@@ -42,7 +42,7 @@ function white(){
     document.getElementById("hcor").style.color ="black"
     document.getElementById("whi").style.color ="black"
     document.getElementById("blc").style.color ="black"
-    document.getElementById("blue").style.color ="black"
+    document.getElementById("green").style.color ="black"
     document.getElementById("env").style.color ="black"
 }
 
@@ -52,16 +52,16 @@ function black(){
     document.getElementById("hcor").style.color ="white"
     document.getElementById("whi").style.color ="white"
     document.getElementById("blc").style.color ="white"
-    document.getElementById("blue").style.color ="white"
+    document.getElementById("green").style.color ="white"
     document.getElementById("env").style.color ="white"
 }
 
-function blue(){
-    document.body.style.backgroundColor = "blue"
+function green(){
+    document.body.style.backgroundColor = "green"
     document.getElementById("quiz").style.color ="white"
     document.getElementById("hcor").style.color ="white"
     document.getElementById("whi").style.color ="white"
     document.getElementById("blc").style.color ="white"
-    document.getElementById("blue").style.color ="white"
+    document.getElementById("green").style.color ="white"
     document.getElementById("env").style.color ="white"
 }
